@@ -7,20 +7,17 @@ import Col from 'react-bootstrap/Col';
 
 function HomeNavigation() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="md" className="bg-body-tertiary">
             <Container fluid>
                 <Row>
-                    <Col lg={{ span: 4 }}>
-                        <Navbar.Brand href="#home">Jesse Bradbury</Navbar.Brand>
-                    </Col>
-                    <Col lg={{ offset: 4 }}>
+                    <Col >
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
+                        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                            <Nav>
                                 <Nav.Link href="#home">Home</Nav.Link>
-                    
+
                                 <Nav.Link href="#resume">Resume</Nav.Link>
-                    
+
                                 <Nav.Link href="#contact">Contact Me</Nav.Link>
                                 <NavDropdown title="Projects" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="#action/3.1">Project 1</NavDropdown.Item>
@@ -35,6 +32,17 @@ function HomeNavigation() {
                                 </NavDropdown>
                             </Nav>
                         </Navbar.Collapse>
+                    </Col>
+                    <Col>
+                        <Navbar.Brand href="#home">
+                        <img
+              alt=""
+              src="../assets/images/FolioHeadshot1.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            Jesse Bradbury</Navbar.Brand>
                     </Col>
                 </Row>
             </Container>
