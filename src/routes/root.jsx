@@ -1,10 +1,12 @@
-import Navbar from '../components/NavBar';
+// import Navbar from '../components/NavBar';
 import Container from '../components/Footer';
+import NavigationMenu from '../components/Navigation'
 
 export default function Root() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
+            <NavigationMenu />
             <section id="about-me">
             <h2>About Me</h2>
 

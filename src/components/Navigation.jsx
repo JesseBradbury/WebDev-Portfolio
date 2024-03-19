@@ -1,9 +1,26 @@
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    // NavigationMenuIndicator,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    // NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+
 function Navigation() {
     return (
-        <div>
-            <p>About Me</p>
-            <p>Resume</p>
-        </div>
+        <NavigationMenu>
+            <NavigationMenuList>
+                <NavigationMenuItem>
+                    <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                        <NavigationMenuLink>Link</NavigationMenuLink>
+                    </NavigationMenuContent>
+                </NavigationMenuItem>
+            </NavigationMenuList>
+        </NavigationMenu>
     )
 }
 
