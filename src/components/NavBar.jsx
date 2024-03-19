@@ -35,14 +35,14 @@ function HomeNavigation() {
                     </Col>
                     <Col>
                         <Navbar.Brand href="#home">
-                        <img
-              alt=""
-              src="../assets/images/FolioHeadshot1.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            Jesse Bradbury</Navbar.Brand>
+                            <img
+                                alt=""
+                                src="/assets/images/FolioHeadshot1.png"
+                                width="30"
+                                height="30"
+                                className="d-inline-block align-top"
+                            />{' '}
+                            Jesse Bradbury</Navbar.Brand>
                     </Col>
                 </Row>
             </Container>
