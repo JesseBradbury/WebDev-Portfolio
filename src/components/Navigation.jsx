@@ -7,20 +7,49 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
     // NavigationMenuViewport,
+    navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { Link, useLocation } from 'react-router-dom';
+
 
 function Navigation() {
     return (
-        <NavigationMenu>
-            <NavigationMenuList>
-                <NavigationMenuItem>
-                    <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <NavigationMenuLink>Link</NavigationMenuLink>
-                    </NavigationMenuContent>
-                </NavigationMenuItem>
-            </NavigationMenuList>
-        </NavigationMenu>
+        <div className="flex flex-row">
+
+            <NavigationMenu>
+                <NavigationMenuList>
+                    <NavigationMenuItem className="mx-2">
+                        <Link to="/AboutMe" legacyBehavior passHref>
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                About Me
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className="mx-2">
+                        <Link to="/Resume" legacyBehavior passHref>
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                Resume
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className="mx-2">
+                        <Link to="/Contact" legacyBehavior passHref>
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                Contact
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className="mx-2">
+                        <Link to="/Portfolio" legacyBehavior passHref>
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                Portfolio
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
+
+                </NavigationMenuList>
+            </NavigationMenu>
+        </div>
     )
 }
 
