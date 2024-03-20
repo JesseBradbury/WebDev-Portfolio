@@ -1,11 +1,11 @@
 import {
     NavigationMenu,
-    NavigationMenuContent,
+    // NavigationMenuContent,
     // NavigationMenuIndicator,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
-    NavigationMenuTrigger,
+    // NavigationMenuTrigger,
     // NavigationMenuViewport,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
@@ -19,7 +19,7 @@ function Navigation() {
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem className="mx-2">
-                        <Link to="/AboutMe" legacyBehavior passHref>
+                        <Link to="/AboutMe" >
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 About Me
                             </NavigationMenuLink>
