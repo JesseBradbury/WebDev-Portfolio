@@ -9,7 +9,9 @@ export default function Root() {
         <>
             
             <Header />
-            <div id="detail">
+
+
+            <div>
                 <Outlet />
             </div>
             

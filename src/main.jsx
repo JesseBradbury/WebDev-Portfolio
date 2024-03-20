@@ -10,6 +10,9 @@ import {
 import './index.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutMe from "./routes/about"
+import Resume from "./routes/resume"
+import Contact from "./routes/contact"
+import Portfolio from "./routes/portfolio"
 
 const router = createBrowserRouter([
   {
@@ -20,7 +23,19 @@ const router = createBrowserRouter([
       {
         path: "/AboutMe",
         element: <AboutMe />,
-      }
+      },
+      {
+        path: "/Resume",
+        element: <Resume />,
+      },
+      {
+        path: "/Contact",
+        element: <Contact />,
+      },
+      {
+        path: "/Portfolio",
+        element: <Portfolio />,
+      },
     ]
   },
 ]);
